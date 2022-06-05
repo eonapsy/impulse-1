@@ -13,11 +13,11 @@ title = "impulse documentation"
 description = "impulse framework documentation"
 
 no_space_before_args = true
-style = "c:/program files (x86)/steam/steamapps/common/garrysmod/garrysmod/gamemodes/impulse/docs/css"
-template = "c:/program files (x86)/steam/steamapps/common/garrysmod/garrysmod/gamemodes/impulse/docs/templates"
+style = "./docs/css"
+template = "./docs/templates"
 format = "markdown"
 ignore = true
-topics = "c:/program files (x86)/steam/steamapps/common/garrysmod/garrysmod/gamemodes/impulse/docs/manual"
+topics = "./docs/manual"
 use_markdown_titles = true
 kind_names = {module = "Libraries", topic = "Manual"}
 merge = true
