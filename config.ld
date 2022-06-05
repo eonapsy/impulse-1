@@ -1,4 +1,8 @@
 -- LDoc configuration and style forked from https://github.com/NebulousCloud/helix (check them out for a serious framework)
+-- To add documentation for code, go and take a look at sv_sync.lua and see how its done.
+-- To add documentation for articles, take a look in the docs/manual folder and see how its done.
+-- After adding new documentation, you will need to rebuild the docs, see https://github.com/NebulousCloud/helix#building-documentation
+-- Share the docs with the community, head over to https://github.com/vingard/impulsedocs and make a PR with the built docs!
 
 file = {
 	"gamemode",
