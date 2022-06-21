@@ -1098,7 +1098,7 @@ net.Receive("impulseMixTry", function(len, ply)
 		return
 	end
 
-	local oWeight = impulse.Inventory.ItemsQW[output]
+	local oWeight = impulse.Inventory.ItemsQW[output] * (mixClass.OutputAmount or 1)
 
 	for v,k in pairs(mixClass.Input) do
 		local iWeight = impulse.Inventory.ItemsQW[v]
