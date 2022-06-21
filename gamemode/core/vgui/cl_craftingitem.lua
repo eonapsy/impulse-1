@@ -137,7 +137,13 @@ function PANEL:Paint(w, h)
 		surface.SetTextColor(item.Colour or color_white)
 		surface.SetFont("Impulse-Elements19-Shadow")
 		surface.SetTextPos(82, 10)
-		surface.DrawText(item.Name)
+		
+		if item.OutputAmount and item.OutputAmount > 1 then
+			surface.DrawText(item.Name.." (x"..item.OutputAmount..")")
+		else
+			surface.DrawText(item.Name)
+		end
+		
 
 		if mix.Level > level then
 			surface.SetTextColor(noCol)
