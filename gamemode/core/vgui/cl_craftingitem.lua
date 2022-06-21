@@ -138,8 +138,8 @@ function PANEL:Paint(w, h)
 		surface.SetFont("Impulse-Elements19-Shadow")
 		surface.SetTextPos(82, 10)
 		
-		if item.OutputAmount and item.OutputAmount > 1 then
-			surface.DrawText(item.Name.." (x"..item.OutputAmount..")")
+		if mix.OutputAmount and mix.OutputAmount > 1 then
+			surface.DrawText(item.Name.." (x"..mix.OutputAmount..")")
 		else
 			surface.DrawText(item.Name)
 		end
