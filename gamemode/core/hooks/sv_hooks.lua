@@ -594,6 +594,10 @@ function GM:DoPlayerDeath(ply, attacker, dmginfo)
 	ragdoll.DeadPlayer = ply
 	ragdoll.Killer = attacker
 	ragdoll.DmgInfo = dmginfo
+	for i = 0, #ply:GetMaterials() do
+		ragdoll:SetSubMaterial(i, ply:GetSubMaterial(i))
+	end
+	ragdoll:SetBodyGroups(ply:GetBodyGroups())
 
 	if ply.LastFall and ply.LastFall > CurTime() - 0.5 then
 		ragdoll.FallDeath = true
